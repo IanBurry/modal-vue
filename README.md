@@ -28,7 +28,7 @@ export default {
 
 Refer to [the vuejs documentation page](https://vuejs.org/v2/guide/components.html) for full details of using components.
 
-### properties
+## properties
 
 One additional property is defined that can be passed to the modal component as an attribute
 
