@@ -8,7 +8,12 @@ This is a version of [colin/modal-vue](https://github.com/colinf/modal-vue) modi
 ## installation
 
 ```bash
-npm install --save modal-vue
+yarn add github:IanBurry/modal-vue
+```
+Or
+
+```bash
+npm install --save github:IanBurry/modal-vue
 ```
 
 Then, within the `<script>` tag of the component in which you want to use the `modal-vue` component you need to import it, and register it as a component.
@@ -32,7 +37,7 @@ One additional property is defined that can be passed to the modal component as 
 
 ## usage
 
-Set the **largeModal** attribute to **true** as show below. The attribute can be bound to data, a computed property, or a method that returns boolean
+Set the **largeModal** attribute to **true** as shown below. The attribute can be bound to data, a computed property, or a method that returns boolean
 
 ```vue
 <modal :showModal="showSourceDialog" :closeAction="closeSourceDialog" largeModal="true">
@@ -57,6 +62,3 @@ npm run demo
 
 and then go to [http://localhost:8000](http://localhost:8000) to access it
 
-## credits
-
-This component was originally based on Kris Jenkin's excellent [Elm Dialog](https://github.com/krisajenkins/elm-dialog) library.
