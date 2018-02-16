@@ -22,6 +22,7 @@
     </div>
     <simple-dialog v-if="exampleName==='Simple'" :showModal="showModal" :closeAction="closeDialog"></simple-dialog>
     <full-dialog v-if="exampleName==='Full'" :showModal="showModal" :closeAction="closeDialog" :clickAction="clickAction"></full-dialog>
+    <full-dialog v-if="exampleName==='Full (large)'" :showModal="showModal" :closeAction="closeDialog" :clickAction="clickAction" largeModal="true"></full-dialog>
   </div>
 </template>
 
@@ -42,6 +43,10 @@
           {
             name: 'Full',
             text: 'A more complex example with a button in the footer.'
+          },
+          {
+            name: 'Full (large)',
+            text: 'A more complex example using the large modal option.'
           }
         ]
       }
@@ -55,6 +60,7 @@
     },
     methods : {
       closeDialog () {
+        console.log('closing...')
         this.showModal = false
       },
       clickAction () {
